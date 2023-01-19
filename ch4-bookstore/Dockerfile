@@ -1,4 +1,3 @@
-# Pull base image
 FROM python:3.10.6-slim-bullseye
 
 ENV PIP_DISABLE_PIP_VERSION_CHECK 1

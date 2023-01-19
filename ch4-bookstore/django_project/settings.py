@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-pk+2#_mm9c8m3!alf&a3!^6sbk&(xv&z+$kntua79kd3t6l643"
+SECRET_KEY = "django-insecure-2vlnw5isw9z1aha(t3cxufg-dis44t7_+*fx#1jitfv5hlkzf%"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Local
+    "accounts.apps.AccountsConfig",
 ]
 
 MIDDLEWARE = [
@@ -79,11 +81,12 @@ DATABASES = {
         "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "postgres",
-        "HOST": "db",  # set in docker-compose.yml
-        "PORT": 5432,  # default postgres port
+        "HOST": "db",
+        "PORT": 5432,
     }
 }
 
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
