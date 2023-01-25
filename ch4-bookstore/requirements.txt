@@ -2,3 +2,5 @@ black==22.12.0
 Django==4.1.5
 flake8==6.0.0
 psycopg2-binary==2.9.5
+crispy-bootstrap5==0.7
+django-crispy-forms==1.14.0
