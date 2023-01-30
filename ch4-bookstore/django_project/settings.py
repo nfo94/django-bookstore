@@ -163,6 +163,8 @@ AUTHENTICATION_BACKENDS = (
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
+DEFAULT_FROM_EMAIL = "admin@djangobookstore.com"
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
